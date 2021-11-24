@@ -1,0 +1,80 @@
+/* pages/recommendSong/recommendSong.wxss */
+.recommendSongContainer .header {
+  position: relative;
+  width: 100%;
+  height: 300rpx;
+}
+
+.header image {
+  width: 100%;
+  height: 100%;
+}
+.header .data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300rpx;
+  height: 100rpx;
+  line-height: 90rpx;
+  text-align: center;
+  color: #fff;
+}
+.header .data .day {
+  font-size: 38rpx;
+}
+
+.listContainer {
+  position: relative;
+  padding: 0 20rpx;
+  top: -20rpx;
+  border-radius: 30rpx;
+  background-color: #fff;
+}
+.listHeader {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.listHeader .listMore {
+  float: right;
+}
+
+/* 内容区域 */
+.listScroll {
+  height: calc(100vh - 380rpx);
+}
+.scrollItem {
+  position: relative;
+  display: flex;
+}
+.scrollItem image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 8rpx;
+  margin-bottom: 20rpx;
+}
+
+.musicInfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+.musicInfo text {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  max-width: 500rpx; /* 最宽400rpx */
+  white-space: nowrap; /* 限制为单行显示 */
+  overflow: hidden; /* 超过最大宽度隐藏 */
+  text-overflow: ellipsis; /* 超出部分省略号显示 */
+}
+.scrollItem .iconfont {
+  position: absolute;
+  right: 0rpx;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: right;
+}
